@@ -9,3 +9,6 @@ __pycache__/
 *~
 *.swp
 *.swo
+
+# Tmux plugins (managed by TPM)
+.config/tmux/plugins/
