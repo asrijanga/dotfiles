@@ -13,13 +13,12 @@ Personal configuration files for development environment.
 # Clone repository
 git clone https://github.com/asrijanga/dotfiles.git ~/dotfiles
 
+# Run the install script to set up your development environment
+./install.sh
+
 # Create symlinks
 ln -s ~/dotfiles/.config/tmux ~/.config/tmux
-# Neovim configuration is now managed by AstroNvim distribution
-
-# For AstroNvim setup:
-# 1. Install AstroNvim from https://github.com/AstroNvim/AstroNvim
-# 2. Follow AstroNvim installation instructions
+```
 
 ## Prerequisites
 
@@ -39,5 +38,24 @@ dotfiles/
 ## Neovim Setup
 
 Neovim is now managed by the AstroNvim distribution. Language servers and plugins are automatically managed by AstroNvim.
+
+## Installation
+
+To set up your development environment with all necessary tools, run:
+
+```bash
+./install.sh
+```
+
+This script will:
+1. Install Homebrew if not already installed
+2. Install essential development tools (tmux, neovim, ripgrep, etc.)
+3. Install useful command-line utilities
+4. Install development fonts
+
+Manual steps after running the script:
+1. Clone your dotfiles: git clone https://github.com/asrijanga/dotfiles.git ~/dotfiles
+2. Set up symlinks for tmux: ln -s ~/dotfiles/.config/tmux ~/.config/tmux
+3. Install AstroNvim separately from: https://github.com/AstroNvim/AstroNvim
 
 
