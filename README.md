@@ -4,8 +4,8 @@ Personal configuration files for development environment.
 
 ## Contents
 
-- **Neovim** - AstroVim configuration with LSP, plugins, and keybindings
 - **Tmux** - Terminal multiplexer configuration
+- **Neovim** - Using AstroNvim distribution (configuration managed by AstroNvim)
 
 ## Installation
 
@@ -14,30 +14,30 @@ Personal configuration files for development environment.
 git clone https://github.com/asrijanga/dotfiles.git ~/dotfiles
 
 # Create symlinks
-ln -s ~/dotfiles/.config/nvim ~/.config/nvim
 ln -s ~/dotfiles/.config/tmux ~/.config/tmux
+# Neovim configuration is now managed by AstroNvim distribution
 
-# Install AstroVim plugins (open nvim, plugins will auto-install)
-nvim
-```
+# For AstroNvim setup:
+# 1. Install AstroNvim from https://github.com/AstroNvim/AstroNvim
+# 2. Follow AstroNvim installation instructions
 
 ## Prerequisites
 
-- Neovim >= 0.9
 - Git
 - A Nerd Font (for icons)
-- Ripgrep (for telescope searching)
+- Tmux >= 3.0
 
 ## Structure
 
 ```
 dotfiles/
 ├── .config/
-│   ├── nvim/          # AstroVim configuration
 │   └── tmux/          # Tmux configuration
 └── .gitconfig         # Git configuration
 ```
 
-## Language Servers
+## Neovim Setup
 
-LSP configurations are in `.config/nvim/lua/plugins/mason.lua`. Language servers will auto-install on first nvim launch.
+Neovim is now managed by the AstroNvim distribution. Language servers and plugins are automatically managed by AstroNvim.
+
+
